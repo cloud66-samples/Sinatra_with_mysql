@@ -1,19 +1,19 @@
 production:
-    after_checkout:
+    after_bundle:
       - source: /.cloud66/rake_task.sh
         destination: /tmp/rake_task.sh
         target: sinatra
         apply_during: build_only
         execute: true
 staging:
-    after_checkout:
+    after_bundle:
       - source: /.cloud66/rake_task.sh
         destination: /tmp/rake_task.sh
         target: sinatra
         apply_during: build_only
         execute: true
 development:
-    after_checkout:
+    after_bundle:
       - source: /.cloud66/rake_task.sh
         destination: /tmp/rake_task.sh
         target: sinatra
