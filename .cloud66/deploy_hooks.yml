@@ -5,7 +5,6 @@ production:
         target: sinatra
         apply_during: build_only
         execute: true
-        sudo: true
 staging:
     after_checkout:
       - source: /.cloud66/rake_task.sh
@@ -13,7 +12,6 @@ staging:
         target: sinatra
         apply_during: build_only
         execute: true
-        sudo: true
 development:
     after_checkout:
       - source: /.cloud66/rake_task.sh
@@ -21,4 +19,3 @@ development:
         target: sinatra
         apply_during: build_only
         execute: true
-        sudo: true
