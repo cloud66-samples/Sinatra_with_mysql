@@ -1,12 +1,12 @@
 development:
   adapter: mysql2
-  username: root
-  password: tjenare
+  username: ENV['MYSQL_USERNAME']
+  password: ENV['MYSQL_PASSWORD']
 test:
   adapter: mysql2
-  username: root
-  password: tjenare
+  username: ENV['MYSQL_USERNAME']
+  password: ENV['MYSQL_PASSWORD']
 production:
   adapter: mysql2
-  username: root
-  password: tjenare
+  username: ENV['MYSQL_USERNAME']
+  password: ENV['MYSQL_PASSWORD']
