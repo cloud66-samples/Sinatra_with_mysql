@@ -3,9 +3,9 @@ production:
       - source: .cloud66/rake_task.sh
         destination: /tmp/rake_task.sh
         target: rails
-	apply_during: build_only
-	execute: true
-	sudo: true
+        apply_during: build_only
+        execute: true
+        sudo: true
 staging:
     after_checkout:
       - source: .cloud66/rake_task.sh
