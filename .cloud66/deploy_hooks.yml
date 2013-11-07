@@ -1,24 +1,24 @@
 production:
-    after_sinatra:
+    after_bundle:
       - source: /.cloud66/rake_task.sh
         destination: /tmp/rake_task.sh
         target: sinatra
         apply_during: build_only
         execute: true
-        sudo: true
+        sudo: false
 staging:
-    after_sinatra:
+    after_bundle:
       - source: /.cloud66/rake_task.sh
         destination: /tmp/rake_task.sh
         target: sinatra
         apply_during: build_only
         execute: true
-        sudo: true
+        sudo: false
 development:
-    after_sinatra:
+    after_bundle:
       - source: /.cloud66/rake_task.sh
         destination: /tmp/rake_task.sh
         target: sinatra
         apply_during: build_only
         execute: true
-        sudo: true
+        sudo: false
