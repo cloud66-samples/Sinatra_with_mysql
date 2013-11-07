@@ -1,6 +1,6 @@
 production:
     after_checkout:
-      - source: .cloud66/rake_task.sh
+      - source: /.cloud66/rake_task.sh
         destination: /tmp/rake_task.sh
         target: rails
         apply_during: build_only
@@ -8,7 +8,7 @@ production:
         sudo: true
 staging:
     after_checkout:
-      - source: .cloud66/rake_task.sh
+      - source: /.cloud66/rake_task.sh
         destination: /tmp/rake_task.sh
         target: rails
         apply_during: build_only
@@ -16,7 +16,7 @@ staging:
         sudo: true
 development:
     after_checkout:
-      - source: .cloud66/rake_task.sh
+      - source: /.cloud66/rake_task.sh
         destination: /tmp/rake_task.sh
         target: rails
         apply_during: build_only
