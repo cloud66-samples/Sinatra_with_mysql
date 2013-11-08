@@ -1,21 +1,21 @@
 production:
     after_bundle:
       - source: /.cloud66/rake_task.sh
-        destination: /tmp/rake_task.sh
+        destination: $STACK_PATH/rake_task.sh
         target: sinatra
         apply_during: build_only
         execute: true
 staging:
     after_bundle:
       - source: /.cloud66/rake_task.sh
-        destination: /tmp/rake_task.sh
+        destination: $STACK_PATH/rake_task.sh
         target: sinatra
         apply_during: build_only
         execute: true
 development:
     after_bundle:
       - source: /.cloud66/rake_task.sh
-        destination: /tmp/rake_task.sh
+        destination: $STACK_PATH/rake_task.sh
         target: sinatra
         apply_during: build_only
         execute: true
