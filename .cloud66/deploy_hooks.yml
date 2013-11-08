@@ -1,5 +1,5 @@
 production:
-    after_bundle:
+    after_symlink:
       - source: /.cloud66/rake_task.sh
         destination: /tmp/rake_task.sh
         target: sinatra
@@ -7,7 +7,7 @@ production:
         execute: true
         sudo: false
 staging:
-    after_bundle:
+    after_symlink:
       - source: /.cloud66/rake_task.sh
         destination: /tmp/rake_task.sh
         target: sinatra
@@ -15,7 +15,7 @@ staging:
         execute: true
         sudo: false
 development:
-    after_bundle:
+    after_symlink:
       - source: /.cloud66/rake_task.sh
         destination: /tmp/rake_task.sh
         target: sinatra
