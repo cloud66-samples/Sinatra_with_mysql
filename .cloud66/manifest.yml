@@ -1,7 +1,8 @@
 defaults: &defaults
   sinatra:
     configuration:
-      custom_deploy_command: bundle exec rake db:migrates
+      custom_build_command: ls -ltr
+      custom_deploy_command: bundle exec rake db:migrate
 development: 
   <<: *defaults
 staging: 
