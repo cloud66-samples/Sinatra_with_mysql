@@ -1,12 +1,12 @@
 development:
     sinatra:
         configuration:
-            custom_build_command: bundle exec rake db:migrate
+            custom_deploy_command: bundle exec rake db:migrate
 production:
     sinatra:
         configuration:
-            custom_build_command: bundle exec rake db:migrate            
+            custom_deploy_command: bundle exec rake db:migrate            
 staging:
     sinatra:
         configuration:
-            custom_build_command: bundle exec rake db:migrate
+            custom_deploy_command: bundle exec rake db:migrate
