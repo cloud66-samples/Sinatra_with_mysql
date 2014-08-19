@@ -1,12 +1,12 @@
-development:
-    sinatra:
-        configuration:
-            custom_deploy_command: bundle exec rake db:migrate
-production:
-    sinatra:
-        configuration:
-            custom_deploy_command: bundle exec rake db:migrate            
-staging:
-    sinatra:
-        configuration:
-            custom_deploy_command: bundle exec rake db:migrate
+qa: 
+  environment_variables: 
+    USE_ENV_VARS: true
+    USE_RUBY_21: true
+rails: 
+  configuration: 
+    ruby_version: "2.1.2"
+  server: 
+    region: "Dallas, TX, USA"
+    size: "Linode 1024"
+    unique_name: web1
+    vendor: linode
