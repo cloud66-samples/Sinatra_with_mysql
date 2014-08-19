@@ -1,12 +1,13 @@
-qa: 
-  environment_variables: 
-    USE_ENV_VARS: true
-    USE_RUBY_21: true
-sinatra: 
-  configuration: 
-    ruby_version: "2.1.2"
-  server: 
-    region: "Dallas, TX, USA"
-    size: "Linode 1024"
-    unique_name: web1
-    vendor: linode
+qa:
+    environment_variables:
+        USE_ENV_VARS: true
+        USE_RUBY_21: true
+<<: *common
+sinatra:
+    server:
+        unique_name: web1
+        vendor: linode
+        region: Dallas, TX, USA
+        size: Linode 1024
+    configuration:
+        ruby_version: 2.1.2
