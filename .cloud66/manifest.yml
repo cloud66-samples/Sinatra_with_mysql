@@ -2,7 +2,8 @@ qa:
     environment_variables:
         USE_ENV_VARS: true
         USE_RUBY_21: true
-<<: *common
+    <<: *common
+common: &common
     sinatra:
         server:
             unique_name: web1
