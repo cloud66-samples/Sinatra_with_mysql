@@ -2,7 +2,7 @@ qa:
   environment_variables: 
     USE_ENV_VARS: true
     USE_RUBY_21: true
-rails: 
+sinatra: 
   configuration: 
     ruby_version: "2.1.2"
   server: 
