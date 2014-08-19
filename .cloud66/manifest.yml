@@ -4,7 +4,7 @@ common: &common
             unique_name: web1
             vendor: linode
             region: Dallas, TX, USA
-            size: "Linode 1024"
+            size: Linode 1024
         configuration:
             ruby_version: 2.1.2
 qa:
